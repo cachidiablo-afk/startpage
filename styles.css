@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin: 5px;
+}
+
+ul {
+  flex: 1;
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 1200px;
+}
+
+.textcard {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.welcome {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0px 35px 0px;
+}
+
+.lists {
+  flex: 1;
+  flex-grow: 4;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
