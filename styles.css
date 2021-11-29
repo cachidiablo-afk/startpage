@@ -18,11 +18,14 @@ a {
 
 h1 {
   color: #00ff9f;
+  margin: 10px;
+  text-align: center;
 }
 
 h2 {
   color: #f0546a;
   text-decoration: underline;
+  text-align: center;
 }
 
 ul {
@@ -33,7 +36,6 @@ li {
   list-style: none;
 }
 
-.welcome,
 .social,
 .tech,
 .lists,
@@ -44,12 +46,16 @@ li {
   background-color: #030002e4;
   border: 1px solid #764c61;
   box-shadow: 0 0 20px #f0546a;
-  margin: 4vh;
+  margin: 20px;
+  padding: 10px 60px 10px 60px;
 }
 
 .welcome {
+  background-color: #030002e4;
   border: 1px solid #764c61;
   box-shadow: 0 0 20px #f0546a;
+  margin: 20px;
+  max-width: 280px;
 }
 
 .techtext {
@@ -57,4 +63,24 @@ li {
 }
 
 .fullcard {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 600px;
+  max-width: 1400px;
+}
+
+.welcome {
+  display: inline-flex;
+  flex-shrink: 3;
+  text-align: center;
+}
+
+.linksgroup {
+  flex: 1;
+  flex-grow: 2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
