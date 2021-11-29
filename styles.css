@@ -8,17 +8,25 @@ html {
 }
 
 body {
-  background-color: #282a36;
+  font-family: "Segoe UI";
+  background-image: url(./images/stars.jpg);
+  min-height: 100vh;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
-  color: #8146a5;
+  color: #f8f8f2;
   text-decoration: none;
+  font-size: 17px;
 }
 
 h1 {
   color: #00ff9f;
   margin: 10px;
+  padding: 0px 20px 0px 20px;
   text-align: center;
 }
 
@@ -26,6 +34,7 @@ h2 {
   color: #f0546a;
   text-decoration: underline;
   text-align: center;
+  font-size: 27px;
 }
 
 ul {
@@ -34,6 +43,7 @@ ul {
 
 li {
   list-style: none;
+  padding: 1px 0px 1px 0px;
 }
 
 .social,
@@ -46,8 +56,8 @@ li {
   background-color: #030002e4;
   border: 1px solid #764c61;
   box-shadow: 0 0 20px #f0546a;
-  margin: 20px;
-  padding: 10px 60px 10px 60px;
+  margin: 10px;
+  padding: 10px 35px 10px 35px;
 }
 
 .welcome {
@@ -55,7 +65,7 @@ li {
   border: 1px solid #764c61;
   box-shadow: 0 0 20px #f0546a;
   margin: 20px;
-  max-width: 280px;
+  max-width: 326px;
 }
 
 .techtext {
@@ -67,8 +77,8 @@ li {
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  max-height: 600px;
-  max-width: 1400px;
+  max-height: 720px;
+  max-width: 1000px;
 }
 
 .welcome {
