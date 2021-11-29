@@ -6,3 +6,55 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+body {
+  background-color: #282a36;
+}
+
+a {
+  color: #8146a5;
+  text-decoration: none;
+}
+
+h1 {
+  color: #00ff9f;
+}
+
+h2 {
+  color: #f0546a;
+  text-decoration: underline;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.welcome,
+.social,
+.tech,
+.lists,
+.lit,
+.weeb,
+.chan,
+.etc {
+  background-color: #030002e4;
+  border: 1px solid #764c61;
+  box-shadow: 0 0 20px #f0546a;
+  margin: 4vh;
+}
+
+.welcome {
+  border: 1px solid #764c61;
+  box-shadow: 0 0 20px #f0546a;
+}
+
+.techtext {
+  color: #00ff9f;
+}
+
+.fullcard {
+}
