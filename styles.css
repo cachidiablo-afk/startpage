@@ -8,5 +8,87 @@ html {
 }
 
 body {
+  background: #282a36 url(./images/emptyroad.jpeg);
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column;
+  min-height: 100vh;
+  margin: 0px;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fde8ea, 0 0 11px #fde8ea, 0 0 19px #fde8ea, 0 0 40px #f0546a, 0 0 80px #f0546a, 0 0 90px #f0546a, 0 0 100px #f0546a, 0 0 150px #f0546a;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+.greetings {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -100px;
+}
+
+h1 {
+  font-family: Yu Gothic;
+  font-size: 60px;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f0546a, 0 0 80px #f0546a, 0 0 90px #f0546a, 0 0 100px #f0546a, 0 0 150px #f0546a;
+  animation: flicker 1.5s infinite alternate;
+}
+
+.fullcard {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 35px;
+}
+
+.firstrow,
+.secondrow,
+.thirdrow,
+.fourthrow {
+  flex: 1;
+  display: flex;
+  flex-flow: row;
+}
+
+.firstrow a,
+.secondrow a,
+.thirdrow a,
+.fourthrow a {
   background-color: rebeccapurple;
+  margin: 11px 11px 11px 11px;
+  padding: 3px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 10px 10px 0px black;
+  border-radius: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+.firstrow a:hover,
+.secondrow a:hover,
+.thirdrow a:hover,
+.fourthrow a:hover {
+  transform: scale(1.1);
+}
+
+.waifu {
+  position: absolute;
+  left: 1290px;
+  bottom: 0px;
 }
