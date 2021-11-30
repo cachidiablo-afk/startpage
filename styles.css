@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background: #282a36 url(./images/emptyroad.jpeg);
+  background: #282a36;
   background-size: cover;
   color: white;
   display: flex;
@@ -36,19 +36,50 @@ body {
   }
 }
 
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow: 0 0 4px #fde8ea, 0 0 11px #fde8ea, 0 0 19px #fde8ea, 0 0 40px #f0546a, 0 0 80px #f0546a, 0 0 90px #f0546a, 0 0 100px #f0546a, 0 0 150px #f0546a;
+  }
+  0% {
+    /* Smaller blur radius */
+    text-shadow: 0 0 2px #fde8ea, 0 0 4px #fde8ea, 0 0 6px #fde8ea, 0 0 10px #f0546a, 0 0 45px #f0546a, 0 0 55px #f0546a, 0 0 70px #f0546a, 0 0 80px #f0546a;
+  }
+}
+
+@keyframes subtle {
+  100% {
+    /* Larger blur radius */
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f0546a, 0 0 80px #f0546a, 0 0 90px #f0546a, 0 0 100px #f0546a, 0 0 150px #f0546a;
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #f0546a, 0 0 73px #f0546a, 0 0 80px #f0546a, 0 0 94px #f0546a, 0 0 140px #f0546a;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
 .greetings {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -100px;
+  margin-bottom: -140px;
 }
 
 h1 {
-  font-family: Yu Gothic;
-  font-size: 60px;
-  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f0546a, 0 0 80px #f0546a, 0 0 90px #f0546a, 0 0 100px #f0546a, 0 0 150px #f0546a;
-  animation: flicker 1.5s infinite alternate;
+  font-family: Yu Mincho;
+  font-size: 70px;
+  animation: subtle 0.11s ease-in-out infinite alternate;
+  color: #fff;
+  margin: 0px;
+  /*border: 0.4rem solid #fff;
+  border-radius: 3rem;
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #f0546a, 0 0 0.8rem #f0546a, 0 0 2.8rem #f0546a, inset 0 0 1.3rem #f0546a; */
 }
 
 .fullcard {
@@ -84,7 +115,7 @@ h1 {
 .secondrow a:hover,
 .thirdrow a:hover,
 .fourthrow a:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .waifu {
