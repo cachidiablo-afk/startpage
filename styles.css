@@ -67,12 +67,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -140px;
 }
 
 h1 {
   font-family: Yu Mincho;
-  font-size: 70px;
+  font-size: 80px;
   animation: subtle 0.11s ease-in-out infinite alternate;
   color: #fff;
   margin: 0px;
