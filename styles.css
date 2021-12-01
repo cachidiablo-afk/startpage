@@ -6,3 +6,124 @@ html {
 *:after {
   box-sizing: inherit;
 }
+<<<<<<< HEAD
+=======
+
+body {
+  background: #282a36;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  min-height: 100vh;
+  margin: 0px;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fde8ea, 0 0 11px #fde8ea, 0 0 19px #fde8ea, 0 0 40px #f0546a, 0 0 80px #f0546a, 0 0 90px #f0546a, 0 0 100px #f0546a, 0 0 150px #f0546a;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow: 0 0 4px #fde8ea, 0 0 11px #fde8ea, 0 0 19px #fde8ea, 0 0 40px #f0546a, 0 0 80px #f0546a, 0 0 90px #f0546a, 0 0 100px #f0546a, 0 0 150px #f0546a;
+  }
+  0% {
+    /* Smaller blur radius */
+    text-shadow: 0 0 2px #fde8ea, 0 0 4px #fde8ea, 0 0 6px #fde8ea, 0 0 10px #f0546a, 0 0 45px #f0546a, 0 0 55px #f0546a, 0 0 70px #f0546a, 0 0 80px #f0546a;
+  }
+}
+
+@keyframes subtle {
+  100% {
+    /* Larger blur radius */
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f0546a, 0 0 80px #f0546a, 0 0 90px #f0546a, 0 0 100px #f0546a, 0 0 150px #f0546a;
+  }
+  0% {
+    /* A slightly smaller blur radius */
+    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 18px #fff, 0 0 38px #f0546a, 0 0 73px #f0546a, 0 0 80px #f0546a, 0 0 94px #f0546a, 0 0 140px #f0546a;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.greetings {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: Yu Mincho;
+  font-size: 80px;
+  animation: subtle 0.11s ease-in-out infinite alternate;
+  color: #fff;
+  margin: 0px;
+  /*border: 0.4rem solid #fff;
+  border-radius: 3rem;
+  padding: 0.4em;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #f0546a, 0 0 0.8rem #f0546a, 0 0 2.8rem #f0546a, inset 0 0 1.3rem #f0546a; */
+}
+
+.fullcard {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 35px;
+  height: 53vh;
+}
+
+.firstrow,
+.secondrow,
+.thirdrow,
+.fourthrow {
+  flex: 1;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+}
+
+.firstrow a,
+.secondrow a,
+.thirdrow a,
+.fourthrow a {
+  background-color: rebeccapurple;
+  margin: 11px 11px 11px 11px;
+  padding: 3px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 10px 10px 0px black;
+  border-radius: 0px;
+  transition: all 0.1s ease-in-out;
+}
+
+.firstrow a:hover,
+.secondrow a:hover,
+.thirdrow a:hover,
+.fourthrow a:hover {
+  transform: scale(1.1);
+}
+
+.waifu {
+  position: absolute;
+  left: 1290px;
+  bottom: 0px;
+}
+>>>>>>> buttons
