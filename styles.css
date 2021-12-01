@@ -12,7 +12,7 @@ body {
   background-size: cover;
   color: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-flow: column;
   min-height: 100vh;
@@ -85,6 +85,7 @@ h1 {
   display: flex;
   flex-flow: column;
   margin-bottom: 35px;
+  height: 55vh;
 }
 
 .firstrow,
@@ -94,6 +95,7 @@ h1 {
   flex: 1;
   display: flex;
   flex-flow: row;
+  align-items: flex-start;
 }
 
 .firstrow a,
@@ -114,7 +116,7 @@ h1 {
 .secondrow a:hover,
 .thirdrow a:hover,
 .fourthrow a:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .waifu {
