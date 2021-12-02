@@ -85,7 +85,7 @@ h1 {
   display: flex;
   flex-flow: column;
   margin-bottom: 35px;
-  height: 53vh;
+  min-height: 54vh;
 }
 
 .firstrow,
