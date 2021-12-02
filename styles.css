@@ -98,6 +98,10 @@ h1 {
   align-items: flex-start;
 }
 
+.lang {
+  min-height: 40.5vh;
+}
+
 .firstrow a,
 .secondrow a,
 .thirdrow a,
